@@ -11,7 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="WeatherPage.xaml">
+    <Compile Update="EmpowermentPage.xaml.cs">
+      <DependentUpon>EmpowermentPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="EmpowermentPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

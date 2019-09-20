@@ -1,34 +1,34 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace WeatherApp
+namespace EmpowermentApp
 {
     public class Core
     {
-        public static async Task<Weather> GetWeather(string zipCode)
+        public static async Task<Empowerment> GetEmpowerment(string zipCode)
         {
-            //Sign up for a free API key at http://openweathermap.org/appid
+            //Sign up for a free API key at http://openEmpowermentmap.org/appid
             string key = "c1a891cded2235c742621b2308755e15";
-            string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="
+            string queryString = "http://api.openEmpowermentmap.org/data/2.5/Empowerment?zip="
                 + zipCode + ",us&appid=" + key + "&units=imperial";
 
             dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
 
-            if (results["weather"] != null)
+            if (results["Empowerment"] != null)
             {
-                Weather weather = new Weather();
-                weather.Title = (string)results["name"];
-                weather.Temperature = (string)results["main"]["temp"] + " F";
-                weather.Wind = (string)results["wind"]["speed"] + " mph";
-                weather.Humidity = (string)results["main"]["humidity"] + " %";
-                weather.Visibility = (string)results["weather"][0]["main"];
+                Empowerment Empowerment = new Empowerment();
+                Empowerment.Title = (string)results["name"];
+                Empowerment.Temperature = (string)results["main"]["temp"] + " F";
+                Empowerment.Wind = (string)results["wind"]["speed"] + " mph";
+                Empowerment.Humidity = (string)results["main"]["humidity"] + " %";
+                Empowerment.Visibility = (string)results["Empowerment"][0]["main"];
 
                 DateTime time = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
                 DateTime sunrise = time.AddSeconds((double)results["sys"]["sunrise"]);
                 DateTime sunset = time.AddSeconds((double)results["sys"]["sunset"]);
-                weather.Sunrise = sunrise.ToString() + " UTC";
-                weather.Sunset = sunset.ToString() + " UTC";
-                return weather;
+                Empowerment.Sunrise = sunrise.ToString() + " UTC";
+                Empowerment.Sunset = sunset.ToString() + " UTC";
+                return Empowerment;
             }
             else
             {

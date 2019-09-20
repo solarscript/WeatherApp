@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace WeatherApp
+namespace EmpowermentApp
 {
     public class DataService
     {
@@ -20,5 +20,5 @@ namespace WeatherApp
 
             return data;
         }
-    }
+    } 
 }

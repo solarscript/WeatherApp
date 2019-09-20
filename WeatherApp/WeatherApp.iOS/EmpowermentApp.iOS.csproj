@@ -151,9 +151,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\WeatherApp\WeatherApp.csproj">
-      <Project>{365B0CBC-61B7-4F56-B639-A49F0F81EB72}</Project>
-      <Name>WeatherApp</Name>
+    <ProjectReference Include="..\WeatherApp\EmpowermentApp.csproj">
+      <Project>{85E4DD86-5598-44E6-AC41-247221559D90}</Project>
+      <Name>EmpowermentApp</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

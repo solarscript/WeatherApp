@@ -1,6 +1,6 @@
-﻿namespace WeatherApp
+﻿namespace EmpowermentApp
 {
-    public class Weather
+    public class Empowerment
     {
         // Because labels bind to these values, set them to an empty string to
         // ensure that the label appears on all platforms by default.

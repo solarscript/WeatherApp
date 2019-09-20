@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace WeatherApp
+namespace EmpowermentApp
 {
 	public partial class MainPage : ContentPage
 	{

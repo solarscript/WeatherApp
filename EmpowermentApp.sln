@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.Android", "WeatherApp\WeatherApp.Android\WeatherApp.Android.csproj", "{1ACFCC94-A0F5-409E-A5C3-169D99FC423C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpowermentApp.Android", "WeatherApp\WeatherApp.Android\EmpowermentApp.Android.csproj", "{1ACFCC94-A0F5-409E-A5C3-169D99FC423C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.iOS", "WeatherApp\WeatherApp.iOS\WeatherApp.iOS.csproj", "{07660733-73AA-458A-BD33-1A702AC5208C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpowermentApp.iOS", "WeatherApp\WeatherApp.iOS\EmpowermentApp.iOS.csproj", "{07660733-73AA-458A-BD33-1A702AC5208C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp\WeatherApp.csproj", "{85E4DD86-5598-44E6-AC41-247221559D90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpowermentApp", "WeatherApp\WeatherApp\EmpowermentApp.csproj", "{85E4DD86-5598-44E6-AC41-247221559D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace WeatherApp.iOS
+namespace EmpowermentApp.iOS
 {
     public class Application
     {
